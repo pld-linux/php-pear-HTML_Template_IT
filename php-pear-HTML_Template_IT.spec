@@ -3,10 +3,10 @@
 %define		_subclass	Template
 %define		_pearname	%{_class}_%{_subclass}_IT
 Summary:	%{_pearname} - Integrated Templates
-Summary(pl):	%{_pearname}
+Summary(pl):	%{_pearname} - zintegrowane szablony
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -27,7 +27,7 @@ which is quite unusual for php skripter like me. I noticed that I do
 not any control on which block gets parsed into which one. If all
 blocks are within one file, the script knows how they are nested and
 in which way you have to parse them. IT knows that inner1 is a child
-of block2, there's no need to tell him about this. Features :
+of block2, there's no need to tell him about this. Features:
  - Nested blocks,
  - Include external file,
  - Custom tags format (default {mytag}).
@@ -35,9 +35,33 @@ of block2, there's no need to tell him about this. Features :
 HTML_Template_ITX: With this class you get the full power of the
 phplib template class. You may have one file with blocks in it but you
 have as well one main file and multiple files one for each block. This
-is quite usefull when you have user configurable websites. Using
+is quite useful when you have user configurable websites. Using
 blocks not in the main template allows you to modify some parts of
 your layout easily.
+
+%description -l pl
+HTML_Template_IT - proste API do szablonów. API Isotemplate (template
+z phplib) jest nieco zawi³e dla pocz±tkuj±cych, ale jest najlepszym
+jakie mo¿na uzyskaæ. template::parse() wymaga nazwania ¼ród³a i celu,
+do którego przetworzony bêdzie aktualny blok. ¬ród³o i cel mog± byæ
+nazwami bloków lub nawet nazwami funkcji obs³uguj±cych. To API daje
+maksymaln± elastyczno¶æ, ale wymaga zawsze wiedzy, co siê robi, co
+nie jest normalnym stanem dla niektórych autorów skryptów PHP, takich
+jak autor tego modu³u. Zauwa¿y³ on, ¿e nie potrzebuje ¿adnej kontroli,
+który blok zostaje przetworzony na który. Je¿eli wszystkie bloki s± w
+jednym pliku, skrypt wie, jak s± zagnie¿d¿one i w jaki sposób powinny
+zostaæ przetworzone. IT wie, ¿e inner1 jest potomkiem block2, nie ma
+potrzeby podawania mu tych informacji. Mo¿liwo¶ci:
+ - zagnie¿d¿one bloki,
+ - do³±czanie zewnêtrznych plików,
+ - w³asny format znaczników (domy¶lnie {mytag}).
+
+HTML_Template_ITX - ta klasa daje ca³± si³ê klasy szablonów z phplib.
+Mo¿na mieæ jeden plik z blokami, ale mo¿na tak¿e mieæ jeden g³ówny
+plik i wiele plików zawieraj±cych po jednym bloku. Jest to przydatne,
+aby pozwoliæ u¿ytkownikowi na konfigurowalne serwisy. Przez u¿ycie
+bloków spoza g³ównego szablonu pozwala siê na ³atwe modyfikowanie
+niektórych czê¶ci wygl±du.
 
 %prep
 %setup -q -c
