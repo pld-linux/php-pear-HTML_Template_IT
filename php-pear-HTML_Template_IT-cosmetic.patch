@@ -1,0 +1,11 @@
+--- ./PHPLIB.php.org	Sat Feb  1 10:45:15 2003
++++ ./PHPLIB.php	Sat Feb  1 20:11:24 2003
+@@ -551,7 +551,7 @@
+      */
+     function haltMsg($msg)
+     {
+-        return new PEAR_ERROR(sprintf("<b>Template Error:</b> %s<br>\n", $msg));
++        return new PEAR_Error(sprintf("<b>Template Error:</b> %s<br>\n", $msg));
+     }
+ }
+ ?>
