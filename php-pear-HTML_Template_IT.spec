@@ -26,7 +26,7 @@ template::parse() [phplib template = Isotemplate] requests you to name
 a source and a target where the current block gets parsed into. Source
 and target can be block names or even handler names. This API gives
 you a maximum of fexibility but you always have to know what you do
-which is quite unusual for php skripter like me. I noticed that I do
+which is quite unusual for PHP skripter like me. I noticed that I do
 not any control on which block gets parsed into which one. If all
 blocks are within one file, the script knows how they are nested and
 in which way you have to parse them. IT knows that inner1 is a child
