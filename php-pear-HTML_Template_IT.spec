@@ -1,15 +1,17 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		HTML
 %define		_subclass	Template
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}_IT
 Summary:	%{_pearname} - Integrated Templates
 Summary(pl):	%{_pearname} - zintegrowane szablony
 Name:		php-pear-%{_pearname}
-Version:	1.0.0
-Release:	3
+Version:	1.1.1
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+Patch0:		%{name}-cosmetic.patch
 URL:		http://pear.php.net/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -39,6 +41,8 @@ is quite useful when you have user configurable websites. Using
 blocks not in the main template allows you to modify some parts of
 your layout easily.
 
+This class has in PEAR status: %{_status}.
+
 %description -l pl
 HTML_Template_IT - proste API do szablonów. API Isotemplate (template
 z phplib) jest nieco zawi³e dla pocz±tkuj±cych, ale jest najlepszym
@@ -63,8 +67,12 @@ aby pozwoliæ u¿ytkownikowi na konfigurowalne serwisy. Przez u¿ycie
 bloków spoza g³ównego szablonu pozwala siê na ³atwe modyfikowanie
 niektórych czê¶ci wygl±du.
 
+Ta klasa ma w PEAR status: %{_status}.
+
 %prep
 %setup -q -c
+cd %{_pearname}-%{version}
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
