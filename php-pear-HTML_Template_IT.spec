@@ -37,9 +37,9 @@ of block2, there's no need to tell him about this. Features:
 HTML_Template_ITX: With this class you get the full power of the
 phplib template class. You may have one file with blocks in it but you
 have as well one main file and multiple files one for each block. This
-is quite useful when you have user configurable websites. Using
-blocks not in the main template allows you to modify some parts of
-your layout easily.
+is quite useful when you have user configurable websites. Using blocks
+not in the main template allows you to modify some parts of your
+layout easily.
 
 This class has in PEAR status: %{_status}.
 
@@ -49,9 +49,9 @@ z phplib) jest nieco zawi³e dla pocz±tkuj±cych, ale jest najlepszym
 jakie mo¿na uzyskaæ. template::parse() wymaga nazwania ¼ród³a i celu,
 do którego przetworzony bêdzie aktualny blok. ¬ród³o i cel mog± byæ
 nazwami bloków lub nawet nazwami funkcji obs³uguj±cych. To API daje
-maksymaln± elastyczno¶æ, ale wymaga zawsze wiedzy, co siê robi, co
-nie jest normalnym stanem dla niektórych autorów skryptów PHP, takich
-jak autor tego modu³u. Zauwa¿y³ on, ¿e nie potrzebuje ¿adnej kontroli,
+maksymaln± elastyczno¶æ, ale wymaga zawsze wiedzy, co siê robi, co nie
+jest normalnym stanem dla niektórych autorów skryptów PHP, takich jak
+autor tego modu³u. Zauwa¿y³ on, ¿e nie potrzebuje ¿adnej kontroli,
 który blok zostaje przetworzony na który. Je¿eli wszystkie bloki s± w
 jednym pliku, skrypt wie, jak s± zagnie¿d¿one i w jaki sposób powinny
 zostaæ przetworzone. IT wie, ¿e inner1 jest potomkiem block2, nie ma
