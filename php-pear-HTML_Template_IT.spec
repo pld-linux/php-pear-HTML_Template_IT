@@ -7,7 +7,7 @@ Summary:	%{_pearname} - Integrated Templates
 Summary(pl):	%{_pearname} - zintegrowane szablony
 Name:		php-pear-%{_pearname}
 Version:	1.1
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 # Source0-md5:	6062a6b0cf6033b206bd62aaeb36c055
@@ -15,6 +15,7 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/HTML_Template_IT/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
+Requires:	php-pear-PEAR
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
