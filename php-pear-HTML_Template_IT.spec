@@ -41,7 +41,7 @@ is quite useful when you have user configurable websites. Using blocks
 not in the main template allows you to modify some parts of your
 layout easily.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 HTML_Template_IT - proste API do szablonów. API Isotemplate (template
