@@ -7,7 +7,7 @@ Summary:	%{_pearname} - Integrated Templates
 Summary(pl):	%{_pearname} - zintegrowane szablony
 Name:		php-pear-%{_pearname}
 Version:	1.1
-Release:	2
+Release:	3
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 # Source0-md5:	6062a6b0cf6033b206bd62aaeb36c055
