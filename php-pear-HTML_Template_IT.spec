@@ -20,6 +20,9 @@ Requires:	php-pear-PEAR
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+# included in tests
+%define		_noautoreq 'pear(Console_TestListener.php)' 'pear(IT_api_testcase.php)' 'pear(IT_usage_testcase.php)'
+
 %description
 HTML_Template_IT: Simple template API. The Isotemplate API is somewhat
 tricky for a beginner although it is the best one you can build.
