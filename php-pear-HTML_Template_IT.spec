@@ -9,7 +9,7 @@ Summary(pl):	%{_pearname} - zintegrowane szablony
 Name:		php-pear-%{_pearname}
 Version:	1.2.1
 Release:	1
-License:	PHP 2.02
+License:	Modified BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	1d4bf6f13ed4de43a0f837c0de9f2d7a
