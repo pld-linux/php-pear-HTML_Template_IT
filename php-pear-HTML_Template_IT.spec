@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}_IT
 
 Summary:	%{_pearname} - Integrated Templates
-Summary(pl):	%{_pearname} - zintegrowane szablony
+Summary(pl.UTF-8):   %{_pearname} - zintegrowane szablony
 Name:		php-pear-%{_pearname}
 Version:	1.2.1
 Release:	1
@@ -50,35 +50,35 @@ layout easily.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-HTML_Template_IT - proste API do szablonów. API Isotemplate (template
-z phplib) jest nieco zawi³e dla pocz±tkuj±cych, ale jest najlepszym
-jakie mo¿na uzyskaæ. template::parse() wymaga nazwania ¼ród³a i celu,
-do którego przetworzony bêdzie aktualny blok. ¬ród³o i cel mog± byæ
-nazwami bloków lub nawet nazwami funkcji obs³uguj±cych. To API daje
-maksymaln± elastyczno¶æ, ale wymaga zawsze wiedzy, co siê robi, co nie
-jest normalnym stanem dla niektórych autorów skryptów PHP, takich jak
-autor tego modu³u. Zauwa¿y³ on, ¿e nie potrzebuje ¿adnej kontroli,
-który blok zostaje przetworzony na który. Je¿eli wszystkie bloki s± w
-jednym pliku, skrypt wie, jak s± zagnie¿d¿one i w jaki sposób powinny
-zostaæ przetworzone. IT wie, ¿e inner1 jest potomkiem block2, nie ma
-potrzeby podawania mu tych informacji. Mo¿liwo¶ci:
- - zagnie¿d¿one bloki,
- - do³±czanie zewnêtrznych plików,
- - w³asny format znaczników (domy¶lnie {mytag}).
+%description -l pl.UTF-8
+HTML_Template_IT - proste API do szablonÃ³w. API Isotemplate (template
+z phplib) jest nieco zawiÅ‚e dla poczÄ…tkujÄ…cych, ale jest najlepszym
+jakie moÅ¼na uzyskaÄ‡. template::parse() wymaga nazwania ÅºrÃ³dÅ‚a i celu,
+do ktÃ³rego przetworzony bÄ™dzie aktualny blok. Å¹rÃ³dÅ‚o i cel mogÄ… byÄ‡
+nazwami blokÃ³w lub nawet nazwami funkcji obsÅ‚ugujÄ…cych. To API daje
+maksymalnÄ… elastycznoÅ›Ä‡, ale wymaga zawsze wiedzy, co siÄ™ robi, co nie
+jest normalnym stanem dla niektÃ³rych autorÃ³w skryptÃ³w PHP, takich jak
+autor tego moduÅ‚u. ZauwaÅ¼yÅ‚ on, Å¼e nie potrzebuje Å¼adnej kontroli,
+ktÃ³ry blok zostaje przetworzony na ktÃ³ry. JeÅ¼eli wszystkie bloki sÄ… w
+jednym pliku, skrypt wie, jak sÄ… zagnieÅ¼dÅ¼one i w jaki sposÃ³b powinny
+zostaÄ‡ przetworzone. IT wie, Å¼e inner1 jest potomkiem block2, nie ma
+potrzeby podawania mu tych informacji. MoÅ¼liwoÅ›ci:
+ - zagnieÅ¼dÅ¼one bloki,
+ - doÅ‚Ä…czanie zewnÄ™trznych plikÃ³w,
+ - wÅ‚asny format znacznikÃ³w (domyÅ›lnie {mytag}).
 
-HTML_Template_ITX - ta klasa daje ca³± si³ê klasy szablonów z phplib.
-Mo¿na mieæ jeden plik z blokami, ale mo¿na tak¿e mieæ jeden g³ówny
-plik i wiele plików zawieraj±cych po jednym bloku. Jest to przydatne,
-aby pozwoliæ u¿ytkownikowi na konfigurowalne serwisy. Przez u¿ycie
-bloków spoza g³ównego szablonu pozwala siê na ³atwe modyfikowanie
-niektórych czê¶ci wygl±du.
+HTML_Template_ITX - ta klasa daje caÅ‚Ä… siÅ‚Ä™ klasy szablonÃ³w z phplib.
+MoÅ¼na mieÄ‡ jeden plik z blokami, ale moÅ¼na takÅ¼e mieÄ‡ jeden gÅ‚Ã³wny
+plik i wiele plikÃ³w zawierajÄ…cych po jednym bloku. Jest to przydatne,
+aby pozwoliÄ‡ uÅ¼ytkownikowi na konfigurowalne serwisy. Przez uÅ¼ycie
+blokÃ³w spoza gÅ‚Ã³wnego szablonu pozwala siÄ™ na Å‚atwe modyfikowanie
+niektÃ³rych czÄ™Å›ci wyglÄ…du.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
@@ -87,7 +87,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
