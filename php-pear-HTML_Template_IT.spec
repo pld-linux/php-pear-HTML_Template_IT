@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}_IT
 
 Summary:	%{_pearname} - Integrated Templates
-Summary(pl.UTF-8):   %{_pearname} - zintegrowane szablony
+Summary(pl.UTF-8):	%{_pearname} - zintegrowane szablony
 Name:		php-pear-%{_pearname}
 Version:	1.2.1
 Release:	1
@@ -78,7 +78,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
