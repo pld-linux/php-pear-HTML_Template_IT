@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_class		HTML
 %define		_subclass	Template
 %define		_status		stable
